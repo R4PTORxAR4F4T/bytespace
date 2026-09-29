@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply font-body text-ink bg-white antialiased; }
+}
+
+@layer utilities {
+  /* 120px blueprint grid used on hero / CTA / auth backgrounds */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.12) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.12) 1px, transparent 1px);
+    background-size: 120px 120px;
+  }
+}
